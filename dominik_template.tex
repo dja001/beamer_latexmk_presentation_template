@@ -1,0 +1,40 @@
+\documentclass[aspectratio=169,14pt]{beamer}
+ \usepackage{setspace}
+\usepackage{textpos}
+\usepackage{tikz}
+\usefonttheme{serif}
+
+\newcommand{\figxys}[4]{
+  \begin{textblock*}{0cm}(#1cm,#2cm)
+  \includegraphics[width=#3\paperwidth]{#4}
+  \end{textblock*}
+}
+
+\RequirePackage{color}
+\definecolor{myblue}{RGB}{71,152,237}
+\definecolor{mygrey}{RGB}{102,102,102}
+
+\RequirePackage{dom_custom_cmds}
+
+\setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
+
+
+\begin{document}
+\beamertemplatenavigationsymbolsempty
+
+
+\begin{frame}
+   title
+\end{frame}
+
+
+\begin{frame}
+    \begin{textblock*}{\textwidth}(-1.00cm,-3.54cm)
+        \includegraphics<1>[width=\paperwidth]{figures/intro.pdf}
+    \end{textblock*}
+\end{frame}
+
+
+
+
+\end{document}
